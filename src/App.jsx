@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
-import Home from "../../views/Home";
-import About from "../../views/About";
-import Contact from "../../views/Contact";
+import Home from "./views/Home";
+import About from "./views/About";
+import Contact from "./views/Contact";
 
 function App() {
   return (
