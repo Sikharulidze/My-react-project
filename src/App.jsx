@@ -5,10 +5,14 @@ import useScore from "./store/useScore";
 
 function App() {
   const dark = useScore((state) => state.dark);
-const setDark = useScore ((state) => state.switchMode);
+  const setDark = useScore((state) => state.switchMode);
   return (
     <div className="container">
-      {dark ? <button onClick={setDark}>light</button> : <button onClick={setDark}>dark</button>}
+      {dark ? (
+        <button onClick={setDark}>light</button>
+      ) : (
+        <button onClick={setDark}>dark</button>
+      )}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

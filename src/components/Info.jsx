@@ -1,7 +1,8 @@
 import { useState } from "react";
+import useScore from "../store/useScore";
 
 const Info = () => {
-    const dark = useScore((state) => state.dark) 
+  const dark = useScore((state) => state.dark);
   const [score, setScore] = useState(0);
   const name = "Mariam";
 
